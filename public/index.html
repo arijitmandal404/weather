@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="icon" href="/public/icons/favicon.png">
+    <script type="text/javascript" src="/public/js/script.js"></script>
+
+    
+</head>
+<body id="document_body_div">
+    <div id="body_div">
+        <div class = "theme_card_parent">
+            <div class = "theme_card_child">
+                <div class="toggle_button_div_class" id="toggle_button_div" title="Theme" onclick="theme_button_fn()">
+                    <button class="theme_button_common_class" id="theme_button">
+                        <img class="theme_icon" id="theme_sun_id" src="/public/images/theme_sun.png" alt="cann't load sun">
+                        <img class="theme_icon" id="theme_moon_id" src="/public/images/theme_moon.png" alt="cann,t load moon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="offline_card_parent_class" id="offline_card_parent">
+            <div class = "offline_card_child" id="offline_card_child_id">
+                <div class = "disconn_img_div">
+                    <img class = "disconn_img" src="/public/images/disconnected_icon.png" alt="error loaing">
+                </div>
+                
+                <div class = "no_internet_head_div">
+                    <span class="no_internet_head_text">Connect to the internet</span>
+                </div>
+                <div class = "no_internet_desc_div">
+                    <span class="no_internet_desc_text">You're offline. Check your connection </span>
+                </div>
+                <div class = "retry_button_div">
+                    <button class = "offline_button" id="offline_button_id" onclick="button_fn()">Retry</button>
+                </div>
+            </div>
+        </div>
+        <div class="search_parent" id="search_parent_id">
+            <div class="search_child" id="search_child_id">
+                <!-- <div class="img_div">
+                    <img src="" alt="">
+                </div> -->
+                <div class="search_box_div">
+                    <input type="number" id="search" placeholder="Search by pin/zip code"  oninput="maxSet()"> <!--Need improvement -->
+                </div>
+                <div class="search_button_div">
+                    <button class="search_button" onclick="search_fn()"><img id="search_img_id" src="/public/images/search.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="weather_card_parent_class" id="weather_card_parent">
+            <div id="weather_card_child" class="weather_card_child_class">
+                <div class = "weather_heading">
+                    <span id="heading">Current Weather :</span>
+                    <span id="place"></span>
+                    <span id="time"></span>
+                </div>
+
+                <hr class="m_hr">
+
+                <div class = "weather_body">
+                    <div>
+                        <div>
+                            <img class = "day_night_icon" id="sun_ico_id" src="/public/images/sun.png" alt="error loading" style="display: none;">
+                        </div>
+                        <div>
+                            <img class = "day_night_icon" id="moon_ico_id" src="/public/images/moon.png" alt="error loading" style="display: none;">
+                        </div>
+                    </div>
+                    <div class = "temperature_section">
+                        <div class = "temp">
+                            <span id="temp_text"></span>
+                        </div>
+
+                        <div class = "real_feel">
+                            <span id="real_feel_text"></span>
+                        </div>
+                        <div id="more_id" class="more">
+                            <a class="more_anch" href="/public/morepage.html">More ></a>
+                        </div>
+                    </div>
+                    <div class = "additional_parent">
+                        <div class ="additional_child">
+                            <div  class="description">
+                                <span class="label">Description</span>
+                                <span id="desc_id" class="value"></span>
+                            </div>
+                            <hr class="hr">
+                            
+                            <div class="description">
+                                <span class="label">Wind Speed</span>
+                                <span id="wind_speed_id" class="value"></span>
+                            </div>
+                            <hr class="hr">
+                            <div class="description">
+                                <span class="label">Humidity</span>
+                                <span id="humidity_id" class="value"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "button_div_id">
+                    <button class="refresh_button" id="refresh_button_id" onclick="button_fn()"><span id="refresh_text">Refersh</span>
+                        <div class="loading_icon" id="loading_icon_id" style="display: none;"></div>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="dummy_card">
+
+            <!-- <h1>Sample Card 2</h1> -->
+        </div>
+    </div>    
+</body>
+</html>

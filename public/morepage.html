@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link rel="icon" href="/public/icons/favicon.png">
+    <link rel="stylesheet" href="/public/css/morepage_style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script type="text/javascript" src="/public/js/morepage.js"></script>
+</head>
+<body id="document_body_div">
+    <div id="body_div">
+        <div class = "theme_card_parent">
+            <div class = "theme_card_child">
+                <div class="toggle_button_div_class" id="toggle_button_div" title="Theme" onclick="theme_button_fn()">
+                    <button class="theme_button_common_class" id="theme_button">
+                        <img class="theme_icon" id="theme_sun_id" src="/public/images/theme_sun.png" alt="cann't load sun">
+                        <img class="theme_icon" id="theme_moon_id" src="/public/images/theme_moon.png" alt="cann,t load moon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="offline_card_parent_class" id="offline_card_parent">
+            <div class = "offline_card_child">
+                <div class = "disconn_img_div">
+                    <img class = "disconn_img" src="/public/images/disconnected_icon.png" alt="error loaing">
+                </div>
+                
+                <div class = "no_internet_head_div">
+                    <span class="no_internet_head_text">Connect to the internet</span>
+                </div>
+                <div class = "no_internet_desc_div">
+                    <span class="no_internet_desc_text">You're offline. Check your connection </span>
+                </div>
+                <div class = "retry_button_div">
+                    <button class = "offline_button" id="offline_button_id" onclick="details()">Retry</button>
+                </div>
+            </div>
+        </div>
+        <div class="main_parent_div" id="allCards">
+            <div class="main_child_div" id="allCard_child">
+                <div class="cards">
+                    <div class="desc">
+                        <span>Place</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "place_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Longitude</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "longitude_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Latitude</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "latitude_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Temparature</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "Temperature_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Real Feel</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "realFeel_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Description</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "description_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Min Temp</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "minTemp_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Max Temp</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "maxTemp_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Pressure</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "pressure_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Humidity</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "humidity_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Wind Speed</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "windSpeed_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>visibility</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id="visibility_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Sea Level</span>
+                    </div>
+                    <hr>
+                    <div class="val" >
+                        <span id="seaLevel_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Sunrise</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "sunrise_text"></span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="desc">
+                        <span>Sunset</span>
+                    </div>
+                    <hr>
+                    <div class="val">
+                        <span id = "sunset_text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
